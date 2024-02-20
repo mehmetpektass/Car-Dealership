@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PHPJabbers.com | Free Car Dealer Website Template</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<%- include("partials/header"); -%>
+
+				<%- include("partials/menu"); -%>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>FAQ</h1>
+									</header>
+
+
+									<% for (let i = 0; i < faqs.length; i += 2) { %>
+										<div class="row">
+											<div class="col-6">
+												<h4><i class="fa fa-question-circle"></i> <%= faqs[i].question %></h4>
+												<p><%= faqs[i].answer %></p>
+											</div>
+						
+											<% if (faqs[i + 1]) { %>
+												<div class="col-6">
+													<h4><i class="fa fa-question-circle"></i> <%= faqs[i + 1].question %></h4>
+													<p><%= faqs[i + 1].answer %></p>
+												</div>
+											<% } %>
+										</div>
+										<br>
+									<% } %>
+								</div>
+							</section>
+					</div>
+
+                <%- include("partials/footer"); -%>
+
+			</div>
+	</body>
+</html>

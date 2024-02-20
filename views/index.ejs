@@ -1,0 +1,259 @@
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<%- include("partials/header.ejs"); -%>
+				<%- include("partials/menu.ejs"); -%>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Welcome to  MOTORS DYNAMIC</h1>
+							</header>
+							<div class="content">
+								<p>Motors Dynamic offers you the best offer you can get!</p>
+								<ul class="actions">
+									<li><a href="/contact" class="button next scrolly">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+							
+							<!-- Featured Cars -->
+							<section class="tiles">
+								<article>
+									<span class="image">
+										<img src="cars-images/1/1.jpeg" alt="" />
+									</span>
+
+									<header class="major">
+										<p>
+											<i class="fa fa-dashboard"></i> 65 000 km &nbsp;&nbsp;
+											<i class="fa fa-cube"></i> 	1.0 Engine &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> Manual
+										</p>
+
+										<h3>Dacia Sandero 2017 </h3>
+
+										<p><del>$11,199</del> <strong> $11,179</strong></p>
+
+										<p>74 hp  /  Petrol  /  2017  /  Used vehicle</p>
+
+										
+
+										<div class="major-actions">
+											<a href="/car-details" class="button small next">View Car</a>
+										</div>
+									</header>
+								</article>
+
+								<article>
+									<span class="image">
+										<img src="cars-images/2/1.jpeg" alt="" />
+									</span>
+									
+									<header class="major">
+										<p>
+											<i class="fa fa-dashboard"></i> 140 500km &nbsp;&nbsp;
+											<i class="fa fa-cube"></i> 4.9 Engine&nbsp;&nbsp;
+											<i class="fa fa-cog"></i> Manual
+										</p>
+
+										<h3>BMW Z8 (E52)</h3>
+
+										<p><del>$61,199</del> <strong> $58,179</strong></p>
+
+										<p>400 hp  /  Petrol  /  2000  /  Used vehicle</p>
+
+										
+
+										<div class="major-actions">
+											<a href="car-details.html" class="button small next">View Car</a>
+										</div>
+									</header>
+								</article>
+
+								<article>
+									<span class="image">
+										<img src="cars-images/3/1.jpeg" alt="" />
+									</span>
+									
+									<header class="major">
+										<p>
+											<i class="fa fa-dashboard"></i> 12 000km &nbsp;&nbsp;
+											<i class="fa fa-cube"></i> 2.5 Engine&nbsp;&nbsp;
+											<i class="fa fa-cog"></i> Automatic
+										</p>
+
+										<h3>2022 Mazda CX-5 </h3>
+
+										<p><del>$29,200</del> <strong> $27,500</strong></p>
+
+										<p>187 hp  /  Petrol  /  2022  /  Used vehicle</p>
+
+										
+
+										<div class="major-actions">
+											<a href="car-details.html" class="button small next">View Car</a>
+										</div>
+									</header>
+								</article>
+
+								<article>
+									<span class="image">
+										<img src="cars-images/4/1.jpeg" alt="" />
+									</span>
+									
+									<header class="major">
+										<p>
+											<i class="fa fa-dashboard"></i> 22 000km &nbsp;&nbsp;
+											<i class="fa fa-cube"></i> 1.6 Engine&nbsp;&nbsp;
+											<i class="fa fa-cog"></i> Automatic
+										</p>
+
+										<h3>Kia Sportage</h3>
+
+										<p><del>$31,200</del> <strong> $29,800</strong></p>
+
+										<p>132 hp  /  Petrol  /  2017  /  Used vehicle</p>
+
+										
+
+										<div class="major-actions">
+											<a href="car-details.html" class="button small next">View Car</a>
+										</div>
+									</header>
+								</article>
+
+								<article>
+									<span class="image">
+										<img src="cars-images/5/1.jpeg" alt="" />
+									</span>
+									
+									<header class="major">
+										<p>
+											<i class="fa fa-dashboard"></i> 74 000km &nbsp;&nbsp;
+											<i class="fa fa-cube"></i> 3.0 Engine&nbsp;&nbsp;
+											<i class="fa fa-cog"></i> Automatic
+										</p>
+
+										<h3>BMW M4 LCI Competition</h3>
+
+										<p><del>$112,000</del> <strong> $109,000</strong></p>
+
+										<p>431 hp  /  Petrol  /  2016  /  Used vehicle</p>
+
+										
+
+										<div class="major-actions">
+											<a href="car-details.html" class="button small next">View Car</a>
+										</div>
+									</header>
+								</article>
+
+								<article>
+									<span class="image">
+										<img src="cars-images/6/1.jpeg" alt="" />
+									</span>
+									
+									<header class="major">
+										<p>
+											<i class="fa fa-dashboard"></i> 38 000km &nbsp;&nbsp;
+											<i class="fa fa-cube"></i> 3.0 Engine&nbsp;&nbsp;
+											<i class="fa fa-cog"></i> Manual
+										</p>
+
+										<h3>F82 BMW M4 Coupe </h3>
+
+										<p><del>$124,500</del> <strong> $122,000</strong></p>
+
+										<p>431 hp  /  Petrol  /  2020  /  Used vehicle</p>
+
+										
+
+										<div class="major-actions">
+											<a href="car-details.html" class="button small next">View Car</a>
+										</div>
+									</header>
+								</article>
+							</section>
+							
+							<!-- About us -->
+							<section>
+								<div class="inner">
+									<header class="major">
+										<h2>About us</h2>
+									</header>
+										<% abouts.forEach(about => { %>
+										  <p><%= about.firstParagraph %></p>
+										<% }); %>
+										<ul class="actions">
+										  <li><a href="/about" class="button next">Read more</a></li>
+										</ul>
+								</div>
+							</section>
+
+							<!-- Blog Posts -->
+							<section class="tiles">
+								<% blogs.forEach(blog => { %>
+								<article>
+									<span class="image">
+										<img src="<%= blog.picturePath %>" alt="" />
+									</span>
+									<header class="major">
+										<h3><%= blog.title %></h3>
+										
+										<p><%= blog.author %> &nbsp;/&nbsp; <%= blog.date %> &nbsp;/&nbsp; <%= blog.views %></p>
+
+										<div class="major-actions">
+											<a href="blog-details?id=<%= blog.id %>" class="button small next">Read the Blog</a>
+										</div>
+									</header>
+								</article>
+								<% }); %>
+								
+								
+							</section>
+
+							<!-- Testimonials -->
+							<section>
+								<div class="inner">
+									<header class="major">
+										<h2>Testimonials</h2>
+									</header>
+									<div class="row">
+
+										<% testimonials.forEach(testimonial => { %>
+
+
+
+										<div class="col-6">
+											<p><em><%= testimonial.content %></em></p>
+											<p><strong>- <%= testimonial.author %> </strong></p>
+											
+										</div>
+
+										<!-- <div class="col-6">
+											<p><em>"We purchased a vehicle and had a great experience! The staff is very friendly and answered all our questions. Hassle-free test drive and all information clearly presented. We will definitely recommend Motors Dynamic Sales to anyone looking for a car!"</em></p>
+											<p><strong>- Jessica Schell</strong></p>
+										</div> -->
+										<% }); %>
+									</div>
+									<ul class="actions">
+										<li><a href="testimonials" class="button next">Read more</a></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+
+					<%- include("partials/footer.ejs"); -%> 
+			</div>
+
+	</body>
+</html>

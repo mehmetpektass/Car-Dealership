@@ -1,0 +1,29 @@
+<!-- <div class="field quarter">
+							                    <!-- <form>
+													<% let options = { type: [] }; %>
+													<label for="type">Type:</label>
+													<select id="type">
+													<option value="">All</option>
+													
+														<% cars.forEach(car => { %>
+  														<% if (!options.type.includes(car.type)) { %>
+    													<option value="<%= car.type %>"><%= car.type %></option>
+   														 <% options.type.push(car.type); %>
+ 														<% } %>
+													<% }); %>
+													</select>
+												
+													<label for="type">Make:</label>
+													<select id="make">
+													<option value="">All</option>
+													<!-- <% let options = { type: [] }; %> -->
+														<% cars.forEach(car => { %>
+  														<% if (!options.make.includes(car.make)) { %>
+    													<option value="<%= car.make %>"><%= car.make %></option>
+   														 <% options.make.push(car.make); %>
+ 														<% } %>
+													<% }); %>
+													</select>
+												
+													<!-- Add more dropdown menus for other car features here -->
+												  </form> --> -->

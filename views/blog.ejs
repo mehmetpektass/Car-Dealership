@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PHPJabbers.com | Free Car Dealer Website Template</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<%- include("partials/header"); -%>
+
+				<%- include("partials/menu"); -%>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Blog</h1>
+									</header>
+								</div>
+							</section>
+
+							<!-- Featured Products -->
+							<section class="tiles">
+								<% blogs.forEach(blog => { %>
+								<article>
+									<span class="image">
+										<img src="<%= blog.picturePath %>" alt="" />
+									</span>
+									<header class="major">
+										<h3><%= blog.title %></h3>
+
+										<p><%= blog.author %> &nbsp;/&nbsp; <%= blog.date %> &nbsp;/&nbsp; <%= blog.views %></p>
+										<div class="major-actions">
+											<a href="blog-details?id=<%= blog.id %>" class="button small next">Read the Blog</a>
+										</div>
+									</header>
+								</article>
+								<% }); %>
+								<!-- <article>
+									<span class="image">
+										<img src="blog-images/blog-2-720x480.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</h3>
+
+										<p>John Doe  &nbsp;/&nbsp;  12/06/2020 10:30  &nbsp;/&nbsp;  114</p>
+
+										<div class="major-actions">
+											<a href="blog-details" class="button small next">Read Blog</a>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="blog-images/blog-3-720x480.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</h3>
+
+										<p>John Doe  &nbsp;/&nbsp;  12/06/2020 10:30  &nbsp;/&nbsp;  114</p>
+
+										<div class="major-actions">
+											<a href="blog-details" class="button small next">Read Blog</a>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="blog-images/blog-4-720x480.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</h3>
+
+										<p>John Doe  &nbsp;/&nbsp;  12/06/2020 10:30  &nbsp;/&nbsp;  114</p>
+
+										<div class="major-actions">
+											<a href="blog-details" class="button small next">Read Blog</a>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="blog-images/blog-5-720x480.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</h3>
+
+										<p>John Doe  &nbsp;/&nbsp;  12/06/2020 10:30  &nbsp;/&nbsp;  114</p>
+
+										<div class="major-actions">
+											<a href="blog-details" class="button small next">Read Blog</a>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="blog-images/blog-6-720x480.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</h3>
+
+										<p>John Doe  &nbsp;/&nbsp;  12/06/2020 10:30  &nbsp;/&nbsp;  114</p>
+
+										<div class="major-actions">
+											<a href="blog-details" class="button small next">Read Blog</a>
+										</div>
+									</header>
+								</article> -->
+							</section>
+
+					</div>
+
+                <%- include("partials/footer"); -%>
+
+
+			</div>
+
+	
+
+	</body>
+</html>

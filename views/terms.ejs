@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PHPJabbers.com | Free Car Dealer Website Template</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<%- include("partials/header"); -%>
+
+				<%- include("partials/menu"); -%>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h1>Terms</h1>
+								</header>
+
+								<% terms.forEach(term =>{ %>
+
+								<h3><%= term.subject %></h3>
+								
+								<p><%= term.content %></p>
+
+								<br>
+
+								<% }) %>
+							</div>
+						</section>
+					</div>
+
+                <%- include("partials/footer"); -%>
+
+			</div>
+	</body>
+</html>
