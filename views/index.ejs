@@ -27,161 +27,44 @@
 							
 							<!-- Featured Cars -->
 							<section class="tiles">
-								<article>
-									<span class="image">
-										<img src="cars-images/1/1.jpeg" alt="" />
-									</span>
-
-									<header class="major">
-										<p>
-											<i class="fa fa-dashboard"></i> 65 000 km &nbsp;&nbsp;
-											<i class="fa fa-cube"></i> 	1.0 Engine &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> Manual
-										</p>
-
-										<h3>Dacia Sandero 2017 </h3>
-
-										<p><del>$11,199</del> <strong> $11,179</strong></p>
-
-										<p>74 hp  /  Petrol  /  2017  /  Used vehicle</p>
-
-										
-
-										<div class="major-actions">
-											<a href="/car-details" class="button small next">View Car</a>
-										</div>
-									</header>
-								</article>
-
-								<article>
-									<span class="image">
-										<img src="cars-images/2/1.jpeg" alt="" />
-									</span>
-									
-									<header class="major">
-										<p>
-											<i class="fa fa-dashboard"></i> 140 500km &nbsp;&nbsp;
-											<i class="fa fa-cube"></i> 4.9 Engine&nbsp;&nbsp;
-											<i class="fa fa-cog"></i> Manual
-										</p>
-
-										<h3>BMW Z8 (E52)</h3>
-
-										<p><del>$61,199</del> <strong> $58,179</strong></p>
-
-										<p>400 hp  /  Petrol  /  2000  /  Used vehicle</p>
-
-										
-
-										<div class="major-actions">
-											<a href="car-details.html" class="button small next">View Car</a>
-										</div>
-									</header>
-								</article>
-
-								<article>
-									<span class="image">
-										<img src="cars-images/3/1.jpeg" alt="" />
-									</span>
-									
-									<header class="major">
-										<p>
-											<i class="fa fa-dashboard"></i> 12 000km &nbsp;&nbsp;
-											<i class="fa fa-cube"></i> 2.5 Engine&nbsp;&nbsp;
-											<i class="fa fa-cog"></i> Automatic
-										</p>
-
-										<h3>2022 Mazda CX-5 </h3>
-
-										<p><del>$29,200</del> <strong> $27,500</strong></p>
-
-										<p>187 hp  /  Petrol  /  2022  /  Used vehicle</p>
-
-										
-
-										<div class="major-actions">
-											<a href="car-details.html" class="button small next">View Car</a>
-										</div>
-									</header>
-								</article>
-
-								<article>
-									<span class="image">
-										<img src="cars-images/4/1.jpeg" alt="" />
-									</span>
-									
-									<header class="major">
-										<p>
-											<i class="fa fa-dashboard"></i> 22 000km &nbsp;&nbsp;
-											<i class="fa fa-cube"></i> 1.6 Engine&nbsp;&nbsp;
-											<i class="fa fa-cog"></i> Automatic
-										</p>
-
-										<h3>Kia Sportage</h3>
-
-										<p><del>$31,200</del> <strong> $29,800</strong></p>
-
-										<p>132 hp  /  Petrol  /  2017  /  Used vehicle</p>
-
-										
-
-										<div class="major-actions">
-											<a href="car-details.html" class="button small next">View Car</a>
-										</div>
-									</header>
-								</article>
-
-								<article>
-									<span class="image">
-										<img src="cars-images/5/1.jpeg" alt="" />
-									</span>
-									
-									<header class="major">
-										<p>
-											<i class="fa fa-dashboard"></i> 74 000km &nbsp;&nbsp;
-											<i class="fa fa-cube"></i> 3.0 Engine&nbsp;&nbsp;
-											<i class="fa fa-cog"></i> Automatic
-										</p>
-
-										<h3>BMW M4 LCI Competition</h3>
-
-										<p><del>$112,000</del> <strong> $109,000</strong></p>
-
-										<p>431 hp  /  Petrol  /  2016  /  Used vehicle</p>
-
-										
-
-										<div class="major-actions">
-											<a href="car-details.html" class="button small next">View Car</a>
-										</div>
-									</header>
-								</article>
-
-								<article>
-									<span class="image">
-										<img src="cars-images/6/1.jpeg" alt="" />
-									</span>
-									
-									<header class="major">
-										<p>
-											<i class="fa fa-dashboard"></i> 38 000km &nbsp;&nbsp;
-											<i class="fa fa-cube"></i> 3.0 Engine&nbsp;&nbsp;
-											<i class="fa fa-cog"></i> Manual
-										</p>
-
-										<h3>F82 BMW M4 Coupe </h3>
-
-										<p><del>$124,500</del> <strong> $122,000</strong></p>
-
-										<p>431 hp  /  Petrol  /  2020  /  Used vehicle</p>
-
-										
-
-										<div class="major-actions">
-											<a href="car-details.html" class="button small next">View Car</a>
-										</div>
-									</header>
-								</article>
+								<% cars.forEach(car=> { %>
+		
+									<article>
+										<span class="image">
+											<img src="<%= car.firstPicture %>" alt="" />
+										</span>
+		
+										<header class="major">
+											<p>
+												<i class="fa fa-dashboard"></i>
+												<%=car.milage%> km&nbsp;&nbsp;
+													<i class="fa fa-cube"></i>
+													<%=car.engineSize%>
+														Engine&nbsp;&nbsp; <i class="fa fa-cog"></i>
+														<%= car.gearBox %>
+											</p>
+		
+											<h3>
+												<%= car.make %>
+													<%= car.model %>
+											</h3>
+		
+											<p><strong>
+													<%= car.price %>$
+												</strong></p>
+		
+											<p>
+												<%= car.power %> hp / <%= car.fuel %> / <%= car.year %> / <%= car.type %>
+																vehicle
+											</p>
+		
+											<div class="major-actions">
+												<a href="/car-details" class="button small next">View Car</a>
+											</div>
+										</header>
+									</article>
+		
+									<% }) %>
 							</section>
 							
 							<!-- About us -->

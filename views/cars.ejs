@@ -41,16 +41,12 @@
 										
 
 											<div class="field quarter">
-							                    <label >TYPE:</label>
-												<select id="type" ,name="type">
-							                        <option value="">-- All Type --</option>
-													<% for(var count = 0 ; count < type_data.length; count++){ %>
-														<option value="<%= type_data[count].type %>"> <%= type_data[count].type %> </option>
-													<% } %>							                        
-							                    </select>
+												<label >Used:</label>
+												<select id="used" ,name="used">
+													<option value="">-- All  Used --</option>							                        
+												</select>
 											</div>
-
-											
+									
 											<div class="field quarter">
 							                    <label >MAKE:</label>
 												<select id="make" ,name="make">
