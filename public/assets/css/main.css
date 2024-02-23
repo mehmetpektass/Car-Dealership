@@ -620,6 +620,42 @@ input::-moz-focus-inner {
 
 			}
 
+
+
+
+
+
+			/* Ana Resim */
+			 .main-image {
+				max-width: 100%;
+				height: auto;
+				border-radius: 20px; /* Köşeleri yuvarla */
+			}
+
+/* Diğer Resimler */
+  .sub-image {
+	width: 100%; /* Resmin genişliği %100 olacak */
+    max-width: 150px; /* Maksimum genişlik belirleyin */
+    height: auto;
+    margin-bottom: 10px; /* Diğer resimler arasında boşluk bırak */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    cursor: pointer; /* İmleci bir el şekline dönüştür */
+}
+
+/* Alt Bölüm */
+ .sub-images {
+    padding-top: 20px; /* Ana resimden alt bölüme boşluk bırak */
+}
+
+
+
+
+
+
+
+
+
+
 /* List */
 
 	ol {

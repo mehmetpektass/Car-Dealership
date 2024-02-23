@@ -20,35 +20,36 @@
 
 				<!-- Main -->
 					<div id="main" class="alt">
-
+						
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
+									
 									<header class="major">
-										<h1>Lorem ipsum dolor sit amet</h1>
+										<h1>	<%= cars.make %> 
+											<%= cars.model %></h1>
 									</header>
+
 
 									<div class="row">
 										<div class="col-md-6">
-											<img src="images/product-1-720x480.jpg" class="img-responsive" alt="">
+											<img src="<%= cars.firstPicture %>" class=" main-image" alt="">
 										</div>
-
+									
 										<div class="col-md-6">
-											<div class="row">
-												<div class="col-md-4 col-xs-6"><img src="images/product-1-720x480.jpg" class="img-responsive" alt=""></div>
-												<div class="col-md-4 col-xs-6"><img src="images/product-2-720x480.jpg" class="img-responsive" alt=""></div>
-												<div class="col-md-4 col-xs-6"><img src="images/product-3-720x480.jpg" class="img-responsive" alt=""></div>
-
-												<div class="col-md-4 col-xs-6"><img src="images/product-4-720x480.jpg" class="img-responsive" alt=""></div>
-												<div class="col-md-4 col-xs-6"><img src="images/product-5-720x480.jpg" class="img-responsive" alt=""></div>
-												<div class="col-md-4 col-xs-6"><img src="images/product-6-720x480.jpg" class="img-responsive" alt=""></div>
+											<div class="row sub-images">
+												<div class="col-md-4 col-xs-6">
+													<img src="<%= cars.secondPicture %>" class="sub-image" alt="">
+												</div>
+												<div class="col-md-4 col-xs-6">
+													<img src="<%= cars.thirdPicture %>" class="sub-image" alt="">
+												</div>
 											</div>
-
 											<br>
-
-											<h2><del>$11 999</del> $11 779</h2>
+											<h2> $11 779</h2>
 										</div>
 									</div>
+									
 
 									<br>
 
@@ -139,6 +140,8 @@
 
 										<p>- Colour coded bumpers<br>- Tinted glass<br>- Immobiliser<br>- Central locking - remote<br>- Passenger airbag<br>- Electric windows<br>- Rear head rests<br>- Radio<br>- CD player<br>- Ideal first car<br>- Warranty<br>- High level brake light<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 									</section>
+								
+								
 
 									<section class="split">
 										<section>
@@ -181,6 +184,7 @@
 			</div>
 
 		
-
+			<script src="assets/js/car-details.js"></script>
 	</body>
+	
 </html>
