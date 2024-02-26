@@ -162,14 +162,19 @@ app.get("/testimonials",function(req,res){
 app.get("/car-details",function(req,res){
   const carId = req.query.id ;
 
-  db.get('SELECT Cars.*, carImages.firstPicture, carImages.secondPicture, carImages.thirdPicture FROM Cars JOIN carImages ON Cars.id = CarImages.CarID WHERE Cars.id = ?' , [carId] , (err , row) => {
+  db.get('SELECT Cars.*, carImages.firstPicture, carImages.secondPicture, carImages.thirdPicture FROM Cars JOIN carImages ON Cars.id = CarImages.CarID WHERE Cars.id = ?' , [carId] , (err , cars) => {
     if(err){
       handleServerError(res , err);
-    }else{
-      res.render('car-details' , {cars: row});
+      return;
     }
+    db.get("SELECT * FROM Contact", (err,contacts)=>{
+      if(err){
+        handleServerError(res, err);
+        return;
+      }
+      res.render('car-details', {cars, contacts});
+    })
   })
-  
 })
 
 

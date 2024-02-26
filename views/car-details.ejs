@@ -33,7 +33,7 @@
 
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<%= cars.firstPicture %>" class=" main-image" alt="">
+											<img src="<%= cars.firstPicture %>"  id="main-image" class="main-image" alt="">
 										</div>
 									
 										<div class="col-md-6">
@@ -46,7 +46,7 @@
 												</div>
 											</div>
 											<br>
-											<h2> $11 779</h2>
+											<h1><%= cars.price %> $</h1>
 										</div>
 									</div>
 									
@@ -56,75 +56,75 @@
 									<form action="#">
 										<div class="fields">
 											<div class="field quarter">
-							                    <label>Type</label>
+							                    <label>TYPE:</label>
 							                     
-							                    <input type="text" readonly value="Used vehicle">
+							                    <input type="text" readonly value="<%= cars.type %>">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Make</label>
+							                    <label>MAKE:</label>
 							                     
-							                    <input type="text" readonly value="Lorem ipsum dolor sit">
+							                    <input type="text" readonly value="<%= cars.make %>">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Model</label>
+							                    <label>MODEL:</label>
 							                     
-							                    <input type="text" readonly value="Lorem ipsum dolor sit">
+							                    <input type="text" readonly value="<%= cars.model %>">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>First registration</label>
+							                    <label>PRICE:</label>
 							                     
-							                    <input type="text" readonly value="05/2010">
+							                    <input type="text" readonly value="<%= cars.price %> $">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Mileage</label>
+							                    <label>YEAR:</label>
 							                     
-							                    <input type="text" readonly value="5000 km">
+							                    <input type="text" readonly value="<%= cars.year %>">
 							                </div>
 
 											<div class="field quarter">
-							                    <label>Fuel</label>
+							                    <label>MILAGE:</label>
 							                     
-							                    <input type="text" readonly value="Diesel">
+							                    <input type="text" readonly value="<%= cars.milage %> Km">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Engine size</label>
+							                    <label>BODY:</label>
 							                     
-							                    <input type="text" readonly value="1800 cc">
+							                    <input type="text" readonly value="<%= cars.body %>">
 							                </div>
 
 											<div class="field quarter">
-							                    <label>Power</label>
+							                    <label>FUEL:</label>
 							                     
-							                    <input type="text" readonly value="85 hp">
+							                    <input type="text" readonly value="<%= cars.fuel %>">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Gearbox</label>
+							                    <label>ENGINE SIZE:</label>
 							                     
-							                    <input type="text" readonly value="Manual">
+							                    <input type="text" readonly value="<%= cars.engineSize %> L">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Number of seats</label>
+							                    <label>POWER:</label>
 							                     
-							                    <input type="text" readonly value="4">
+							                    <input type="text" readonly value="<%= cars.power %> HP">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Doors</label>
+							                    <label>GEARBOX:</label>
 							                     
-							                    <input type="text" readonly value="2/3">
+							                    <input type="text" readonly value="<%= cars.gearBox %>">
 							                </div>
 
 							                <div class="field quarter">
-							                    <label>Color</label>
+							                    <label>COLOR:</label>
 							                     
-							                    <input type="text" readonly value="black">
+							                    <input type="text" readonly value="<%= cars.color %>">
 							                </div>
 										</div>
 									</form>
@@ -138,7 +138,7 @@
 											<h2>Vehicle Description</h2>
 										</header>
 
-										<p>- Colour coded bumpers<br>- Tinted glass<br>- Immobiliser<br>- Central locking - remote<br>- Passenger airbag<br>- Electric windows<br>- Rear head rests<br>- Radio<br>- CD player<br>- Ideal first car<br>- Warranty<br>- High level brake light<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<h4>- <%= cars.type %> <br>- <%= cars.make %> <br>- <%= cars.model %> <br>- <%= cars.price %> <br>- <%= cars.year %> <br>- <%= cars.milage %> <br>- <%= cars.body %> <br>- <%= cars.fuel %> <br>- <%= cars.engineSize %> <br>- <%= cars.power %> <br>- <%= cars.gearBox %> <br>- <%= cars.color %></h4>
 									</section>
 								
 								
@@ -148,7 +148,7 @@
 											<div class="contact-method">
 												<span class="icon alt fa-user"></span>
 												<h3>Name</h3>
-												<span>John Smith</span>
+												<span><%= contacts.name %></span>
 											</div>
 										</section>
 
@@ -156,14 +156,14 @@
 											<div class="contact-method">
 												<span class="icon alt fa-envelope"></span>
 												<h3>Email</h3>
-												<a href="#">contact@company.com</a>
+												<a href="#"><%= contacts.eMail %></a>
 											</div>
 										</section>
 										<section>
 											<div class="contact-method">
 												<span class="icon alt fa-phone"></span>
 												<h3>Phone</h3>
-												<span>+1 333 4040 5566</span>
+												<span><%= contacts.firstPhone %></span>
 											</div>
 										</section>
 
@@ -171,7 +171,7 @@
 											<div class="contact-method">
 												<span class="icon alt fa-phone"></span>
 												<h3>Mobile Phone</h3>
-												<span>+1 333 5550 3366</span>
+												<span><%= contacts.secondPhone %></span>
 											</div>
 										</section>
 									</section>
@@ -184,7 +184,7 @@
 			</div>
 
 		
-			<script src="assets/js/car-details.js"></script>
+			
 	</body>
 	
 </html>
